@@ -1,0 +1,82 @@
+.tenant-class{
+    .project-link{
+        text-align: center;
+        margin-top: 10px !important;
+        padding-top: 10px;
+        border-top: 1px solid #009432;
+        color: black !important;
+    }
+    .project-name{
+        font-weight: bold
+    }
+    .card{
+        transition: unset !important;
+        border-radius: 20px;
+    }
+    .white.card:hover {
+        z-index: 10;
+    }
+    .white.card{
+        position: relative;
+        cursor: pointer;
+       
+    }
+    .card-title{
+        font-weight: bold !important;
+        overflow: hidden;
+        white-space:nowrap;
+        text-overflow:ellipsis;
+        width: 250px;
+    }
+    .hamburger{
+        position: relative;
+        top: 56px;
+        left: 19rem;
+        cursor: pointer;
+        display: inline;
+        z-index: 11;
+        padding: 5px;
+        transition: all 20ms linear;
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+    .hamburger:after {
+        content: '\2807';
+        font-size: 20px;
+    }
+    .card-content p{
+        color: gray !important;
+    }
+    .card-content div{
+        margin-top: 25px;
+    }
+    .published .badge {
+        background: green;
+        color: white
+    }
+    .unpublished .badge{
+        background: #1da1f2;
+        color: white
+    }
+    .to-clone{
+        float: right;
+        cursor: pointer;
+    }
+}
+.cardMenu{
+    position: absolute;
+    right: 12px;
+    top: 20px;
+    z-index: 60;
+    background-color: #ffff;
+    transition: all 20ms linear;
+    ul{
+        padding: 5px;
+        margin: 0;
+        li {
+            padding: 5px 20px 3px;
+        }
+    }
+
+}

@@ -1,0 +1,201 @@
+{
+  "layout": [
+    {
+      "type": "heading",
+      "label": "Text configuration",
+      "options": {
+        "level": 1
+      }
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "label": "Element type",
+      "options": {
+        "validation": {
+          "required": true
+        },
+        "disabled": true
+      }
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "label": "Name",
+      "options": {
+        "hint": "A unique element name",
+        "validation": {
+          "required": true
+        }
+      }
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "label": "Label",
+      "options": {
+        "hint": "The text the user sees",
+        "validation": {
+          "required": true
+        }
+      }
+    },
+    {
+      "name": "options",
+      "type": "panel",
+      "label": "Options",
+      "options": {
+        "fields": [
+          {
+            "name": "hint",
+            "type": "text",
+            "label": "Hint",
+            "options": {
+              "hint": "Give user a hint",
+              "validation": {
+                "required": false
+              }
+            }
+          },
+		  {
+			"name": "defaultValue",
+			"type": "text",
+			"label": "Default value",
+			"options": {
+				"validation": {
+					"required": false
+				},
+				"hint": "Provide a default value"
+			}
+		  },
+          {
+            "name": "autocomplete",
+            "type": "checkbox",
+            "label": "Autocomplete?",
+            "options":{
+              "align": "after",
+              "validation":{
+                "required": false
+              }
+            }
+          },
+          {
+            "name": "items",
+            "type": "array",
+            "label": "Autocomplete items",
+            "options": {
+              "validation": {
+                "required": false
+              },
+              "hint": "Enter items",
+              "fields": [
+                {
+                  "name": "label",
+                  "type": "text",
+                  "label": "Label",
+                  "options": {
+                    "validation": {
+                      "required": true
+                    },
+                    "hint": "Enter label"
+                  }
+                },
+				{
+                  "name": "label",
+                  "type": "text",
+                  "label": "Label",
+                  "options": {
+                    "validation": {
+                      "required": true
+                    },
+                    "hint": "Enter label"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "name": "validation",
+            "type": "fieldset",
+            "label": "Validation",
+            "options": {
+              "fields": [
+                {
+                  "name": "required",
+                  "type": "checkbox",
+                  "label": "Required?",
+                  "options":{
+                    "align": "after",
+                    "validation":{
+                      "required": false
+                    }
+                  }
+                },
+                {
+                  "name": "minLength",
+                  "type": "number",
+                  "label": "Minimum length",
+                  "options": {
+                    "hint": "The minimum characters that must be entered",
+                    "validation": {
+                      "required": false
+                    }
+                  }
+                },
+                {
+                  "name": "maxLength",
+                  "type": "number",
+                  "label": "Maximum length",
+                  "options": {
+                    "hint": "The maximum characters that can be entered",
+                    "validation": {
+                      "required": false
+                    }
+                  }
+                },
+				{
+					"name": "requiredIf",
+					"type": "fieldset",
+					"label": "Required If?",
+					"options": {
+						"fields": [
+							{
+								"name": "property",
+								"type": "text",
+								"label": "Property name",
+								"options": {
+									"hint":"Property name of field dependency.",
+									"validation": {
+										"required": false
+									}
+								}
+							},
+							{
+								"name": "value",
+								"type": "text",
+								"label": "Property value",
+								"options": {
+									"hint":
+										"Value of dependent field.",
+									"validation": {
+										"required": false
+									}
+								}
+							}
+						]
+					}
+				}
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "entity": {
+    "type": "text",
+    "options": {
+      "disabled": false
+    }
+  }
+}

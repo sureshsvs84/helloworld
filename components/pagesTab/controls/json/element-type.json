@@ -1,0 +1,107 @@
+[
+	{
+		"value": "action-toolbar",
+		"label": "ActionToolbar"
+	},
+	{
+		"value": "address",
+		"label": "Address"
+	},
+	{
+		"value": "array",
+		"label": "Array"
+	},
+	{
+		"value": "button",
+		"label": "Button"
+	},
+	{
+		"value": "checkbox",
+		"label": "Checkbox"
+	},
+	{
+		"value": "checkbox-group",
+		"label": "CheckboxGroup"
+	},
+	{
+		"value": "date",
+		"label": "Date"
+	},
+	{
+		"value": "email",
+		"label": "Email"
+	},
+	{
+		"value": "fieldset",
+		"label": "Fieldset"
+	},
+	{
+		"value": "heading",
+		"label": "Heading"
+	},
+	{
+		"value": "number",
+		"label": "Number"
+	},
+	{
+		"value": "panel",
+		"label": "Panel"
+	},
+	{
+		"value": "password",
+		"label": "Password"
+	},
+	{
+		"value": "phone",
+		"label": "Phone"
+	},
+	{
+		"value": "radio",
+		"label": "Radio"
+	},
+	{
+		"value": "select",
+		"label": "Select"
+	},
+	{
+		"value": "slider",
+		"label": "Slider"
+	},
+	{
+		"value": "slide-toggle",
+		"label": "SlideToggle"
+	},
+	{
+		"value": "ssn",
+		"label": "Ssn"
+	},
+	{
+		"value": "states",
+		"label": "States"
+	},
+	{
+		"value": "static",
+		"label": "Static"
+	},
+	{
+		"value": "text",
+		"label": "Text"
+	},
+	{
+		"value": "textarea",
+		"label": "Textarea"
+	},
+	{
+		"value": "text-mask",
+		"label": "TextMask"
+	},
+	{
+		"value": "time",
+		"label": "Time"
+	},
+	{
+		"value": "zip",
+		"label": "Zip"
+	}
+
+]

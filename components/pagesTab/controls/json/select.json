@@ -1,0 +1,222 @@
+{
+  "layout": [
+    {
+      "type": "heading",
+      "label": "Select configuration",
+      "options": {
+        "level": 1
+      }
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "label": "Element type",
+      "options": {
+        "validation": {
+          "required": true
+        },
+        "disabled": true
+      }
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "label": "Name",
+      "options": {
+        "hint": "A unique element name",
+        "validation": {
+          "required": true
+        }
+      }
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "label": "Label",
+      "options": {
+        "hint": "What the user sees",
+        "validation": {
+          "required": true
+        }
+      }
+    },
+    {
+      "name": "options",
+      "type": "panel",
+      "label": "Options",
+      "options": {
+        "fields": [
+          {
+            "name": "hint",
+            "type": "text",
+            "label": "Hint",
+            "options": {
+              "validation": {
+                "required": false
+              },
+              "hint": "Provide additional instructions if necessary"
+            }
+          },
+          {
+            "name": "validation",
+            "type": "fieldset",
+            "label": "Validation",
+            "options": {
+              "fields": [
+                {
+                  "name": "required",
+                  "type": "checkbox",
+                  "label": "Required?",
+                  "options": {
+                    "align": "after",
+                    "validation": {
+                      "required": false
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "name": "items",
+            "type": "array",
+            "label": "Items",
+            "options": {
+              "validation": {
+                "required": true
+              },
+              "hint": "Enter items",
+              "fields": [
+                {
+                  "name": "value",
+                  "type": "text",
+                  "label": "Value",
+                  "options": {
+                    "validation": {
+                      "required": true
+                    },
+                    "hint": "Enter value"
+                  }
+                },
+                {
+                  "name": "label",
+                  "type": "text",
+                  "label": "Label",
+                  "options": {
+                    "validation": {
+                      "required": true
+                    },
+                    "hint": "Enter label"
+                  }
+                },
+                {
+                  "name": "options",
+                  "type": "panel",
+                  "label": "Options",
+                  "options": {
+                    "fields": [
+                      {
+                        "name": "specify",
+                        "type": "panel",
+                        "label": "Other specify",
+                        "options": {
+                          "fields": [
+                            {
+                              "name": "type",
+                              "type": "select",
+                              "label": "Element Type",
+                              "options": {
+                                "validation": {
+                                  "required": false
+                                },
+                                "items": [
+                                  {
+                                    "label": "Text",
+                                    "value": "text"
+                                  }
+                                ],
+                                "disabled": false
+                              }
+                            },
+                            {
+                              "name": "name",
+                              "type": "text",
+                              "label": "Name",
+                              "options": {
+                                "hint": "A unique element name",
+                                "validation": {
+                                  "required": false
+                                }
+                              }
+                            },
+                            {
+                              "name": "label",
+                              "type": "text",
+                              "label": "Label",
+                              "options": {
+                                "hint": "The text the user sees",
+                                "validation": {
+                                  "required": false
+                                }
+                              }
+                            },
+                            {
+                              "name": "options",
+                              "type": "panel",
+                              "label": "Options",
+                              "options": {
+                                "fields": [
+                                  {
+                                    "name": "hint",
+                                    "type": "text",
+                                    "label": "Hint",
+                                    "options": {
+                                      "hint": "Give the user a hint",
+                                      "validation": {
+                                        "required": false
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "name": "validation",
+                                    "type": "fieldset",
+                                    "label": "Validation",
+                                    "options": {
+                                      "fields": [
+                                        {
+                                          "name": "required",
+                                          "type": "checkbox",
+                                          "label": "Required?",
+                                          "options": {
+                                            "align": "after",
+                                            "validation": {
+                                              "required": false
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "entity": {
+    "type": "select",
+    "options": {
+      "level": 1
+    }
+  }
+}

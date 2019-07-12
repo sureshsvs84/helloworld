@@ -1,0 +1,119 @@
+{
+  "layout": [
+    {
+      "type": "heading",
+      "label": "Address configuration",
+      "options": {
+        "level": 1
+      }
+    },
+    {
+      "name": "type",
+      "type": "text",
+      "label": "Element type",
+      "options": {
+        "validation": {
+          "required": true
+        },
+        "disabled": true
+      }
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "label": "Name",
+      "options": {
+        "hint": "A unique element name",
+        "validation": {
+          "required": true
+        }
+      }
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "label": "Label",
+      "options": {
+        "hint": "What the user sees",
+        "validation": {
+          "required": true
+        }
+      }
+    },
+    {
+      "name": "options",
+      "type": "panel",
+      "label": "Options",
+      "options": {
+        "fields": [
+          {
+            "name": "hint",
+            "type": "text",
+            "label": "Hint",
+            "options": {
+              "validation": {
+                "required": false
+              },
+              "hint": "Provide additional instructions if necessary"
+          }},
+          {"name": "validation",
+          "type": "fieldset",
+          "label": "Validation",
+          "options": {
+            "fields": [
+              {
+                "name": "required",
+                "type": "checkbox",
+                "label": "Required?",
+                "options":{
+                  "align": "after",
+                  "validation":{
+                    "required": false
+                  }
+                }
+              },
+			{
+				"name": "requiredIf",
+				"type": "fieldset",
+				"label": "Required If?",
+				"options": {
+					"fields": [
+						{
+							"name": "property",
+							"type": "text",
+							"label": "Property name",
+							"options": {
+								"hint":"Property name of field dependency.",
+								"validation": {
+									"required": false
+								}
+							}
+						},
+						{
+							"name": "value",
+							"type": "text",
+							"label": "Property value",
+							"options": {
+								"hint":
+									"Value of dependent field.",
+								"validation": {
+									"required": false
+								}
+							}
+						}
+					]
+				}
+			}
+            ]
+          }}
+        ]
+      }
+    }
+  ],
+  "entity": {
+    "type": "address",
+    "options": {
+      "level": 1
+    }
+  }
+}
